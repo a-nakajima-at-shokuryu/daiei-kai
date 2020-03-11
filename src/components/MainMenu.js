@@ -10,11 +10,13 @@ import {
   makeStyles,
   createMuiTheme,
   MuiThemeProvider,
+  Tooltip,
 } from '@material-ui/core';
 import { 
   Menu as MenuIcon, 
   ChevronLeft as ChevronLeftIcon,  
   Home as HomeIcon, 
+  GitHub as GitHubIcon, 
 } from '@material-ui/icons';
 import { blue } from '@material-ui/core/colors';
 import clsx from 'clsx';
@@ -100,9 +102,17 @@ const MainMenu = ({
             {title}
           </Typography>
           <div className={classes.grow} />
-          <IconButton component={Link} to="/" color="inherit">
-            <HomeIcon />
-          </IconButton>
+          <Tooltip title="トップ画面へ戻る">
+            <IconButton component={Link} to="/" color="inherit">
+              <HomeIcon />
+            </IconButton>
+          </Tooltip>
+          <Tooltip title="GitHubリポジトリ">
+            <IconButton href="https://github.com/a-nakajima-at-shokuryu/daiei-kai" color="inherit">
+              <GitHubIcon />
+            </IconButton>
+          </Tooltip>
+          
         </Toolbar>
       </AppBar>
       <Drawer variant="persistent" anchor="left" open={open}
