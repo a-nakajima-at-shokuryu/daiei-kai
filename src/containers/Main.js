@@ -9,7 +9,7 @@ import {
 const Main = ({
   match, 
 }) => {
-  console.log(match)
+  
   const renderSideMenu = (
     <List>
       {[
