@@ -1,6 +1,6 @@
 # daiei-kai
 
-[demo](https://ebix-caab2.firebaseapp.com)
+デモ画面は[こちら](https://ebix-caab2.firebaseapp.com)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
